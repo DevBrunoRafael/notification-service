@@ -12,12 +12,19 @@
     "baseUrl": "./",
     "incremental": true,
     "skipLibCheck": true,
-    "strictNullChecks": true, // default false
+    "resolveJsonModule": true, 
+    "strictNullChecks": true,
     "noImplicitAny": false,
     "strictBindCallApply": false,
     "forceConsistentCasingInFileNames": false,
     "noFallthroughCasesInSwitch": false,
-    "strict": true, // faz verificação mais afundo da tipagem
-    "strictPropertyInitialization": false // faz com que propriedades não necessitem ser inicializadas no contrutor
+    "strict": true,
+    "strictPropertyInitialization": false,
+    "paths": {
+      "@application/*":["./src/application/*"],
+      "@helpers/*":["./src/helpers/*"],
+      "@infra/*":["./src/infra/*"],
+      "@test/*":["./test/*"]
+    }
   }
 }
